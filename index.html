@@ -1,383 +1,823 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a Insight Sync e o Memori, um aplicativo que conecta tecnologia, educação e patrimônio cultural.">
-    <title>Insight Sync | Tecnologia, Cultura e Educação</title>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <meta name="description" content="Conheça o Memori, projeto da Insight Sync que aproxima adolescentes do patrimônio cultural por meio da realidade aumentada.">
+    <title>Memori | Insight Sync</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#inicio">
-            <img
-                src="imgs/logo_navbar.png"
-                alt="Logo Insight Sync"
-                class="imgnavbar"
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top site-nav">
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+                <img src="imgs/logo_navbar.png" alt="Logo Insight Sync" class="brand-logo">
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu"
             >
-        </a>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Abrir menu"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
 
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">
-                        Início
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre-nos">
-                        Sobre Nós
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#memori">
-                        Memori
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#equipe">
-                        Equipe
-                    </a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#funcionalidades">Funcionalidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#memori">Memori</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipe">Equipe</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta" href="#contato">Contato ↗</a>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
-    </div>
-  </nav>
+    </nav>
 
-<section id="inicio" class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="hero-content">
-                    <span class="hero-tag">
-                        TECNOLOGIA • CULTURA • EDUCAÇÃO
-                    </span>
-                    <h1>
-                        Conectando
-                        <span>histórias</span>
-                        ao futuro.
-                    </h1>
-                    <p>
-                        Somos a Insight Sync, uma equipe que acredita
-                        no poder da tecnologia para transformar
-                        a maneira como conhecemos, valorizamos
-                        e preservamos a nossa cultura.
-                    </p>
+    <main>
 
-                    <div class="hero-buttons">
-                        <a href="#memori" class="btn-hero">
-                            Conheça o Memori
-                        </a>
-                        <a href="#sobre-nos" class="btn-hero-outline">
-                            Sobre Nós
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <section id="inicio" class="hero section-space">
+            <div class="container">
+                <div class="row align-items-center g-5">
 
-            <div class="col-lg-5">
-                <div class="hero-visual">
-                    <div class="hero-circle">
-                        <span class="hero-circle-text">
-                            INSIGHT<br>SYNC
+                    <div class="col-lg-6">
+
+                        <span class="eyebrow">
+                            <span class="dot"></span>
+                            TECNOLOGIA • CULTURA • EDUCAÇÃO
                         </span>
-                    </div>
-                    <div class="hero-decoration decoration-one"></div>
-                    <div class="hero-decoration decoration-two"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
+                        <h1>
+                            O passado ganha
+                            <span>vida</span>
+                            com o Memori.
+                        </h1>
 
-<section id="memori" class="memori-section">
-    <div class="container">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-                <div class="memori-image">
-                    <div class="memori-image-bg"></div>
-                    <img
-                        src="imgs/iphones.png"
-                        alt="Apresentação do aplicativo Memori"
-                        class="img-fluid"
-                    >
-                </div>
-            </div>
+                        <p class="lead-copy">
+                            Preservando a cultura através da realidade aumentada.
+                            Uma nova forma de explorar a história e o patrimônio
+                            cultural da nossa região.
+                        </p>
 
-            <div class="col-lg-6">
-                <div class="memori-content">
-                    <span class="section-tag">
-                        NOSSO APLICATIVO
-                    </span>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#memori" class="button button-pink">
+                                Conheça o Memori ↗
+                            </a>
 
-                    <div class="memori-title">
-                        <h2>MEMORI</h2>
-                        <span class="memori-badge">
-                            BETA
-                        </span>
-                    </div>
-
-                    <h3>
-                        O passado ganha vida
-                        através da tecnologia.
-                    </h3>
-                    <p>
-                        Inspirado na palavra latina
-                        <strong><i>memoria</i></strong>,
-                        o nome Memori representa nossa missão
-                        de preservar e reviver a história
-                        e a cultura por meio de experiências
-                        imersivas.
-                    </p>
-                    <p>
-                        O Memori é um aplicativo que busca
-                        valorizar o patrimônio cultural local,
-                        complementando o aprendizado de
-                        adolescentes sobre a história
-                        de sua região.
-                    </p>
-                    <p>
-                        Utilizando a Realidade Aumentada (RA),
-                        o aplicativo proporciona uma experiência
-                        interativa que aproxima os usuários
-                        da cultura e da memória de sua comunidade.
-                    </p>
-
-                    <div class="memori-platforms">
-                        <div class="platform-card">
-                            <img
-                                src="imgs/Apple-logo.png"
-                                alt="App Store"
-                            >
+                            <a href="#funcionalidades" class="button button-link">
+                                Explore as funcionalidades ↓
+                            </a>
                         </div>
-                        <div class="platform-card">
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-art">
+
+                            <span class="hero-shape hero-shape-green" aria-hidden="true"></span>
+                            <span class="hero-shape hero-shape-yellow" aria-hidden="true"></span>
+
                             <img
-                                src="imgs/Google-logo.png"
-                                alt="Google Play"
+                                src="imgs/iphones.png"
+                                alt="Visualização do aplicativo Memori em celulares"
+                                class="hero-phones"
                             >
+
+                            <span class="art-caption">
+                                MEMÓRIA + TECNOLOGIA + CULTURA
+                            </span>
+
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section id="sobre-nos" class="sobre-nos">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2>Sobre Nós</h2>
-            <p>
-                Conheça um pouco mais sobre a Insight Sync
-                e o propósito que nos conecta.
-            </p>
+        <div class="ticker" aria-label="Temas do projeto">
+            <div class="container ticker-inner">
+                <span>História ✳</span>
+                <span>Cultura ✳</span>
+                <span>Tecnologia ✳</span>
+                <span>Educação ✳</span>
+            </div>
         </div>
 
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-                <div class="sobre-content">
-                    <h3>
-                        Transformando cultura
-                        em experiências.
-                    </h3>
-                    <p>
-                        Somos uma equipe dedicada à transformação
-                        da educação e da cultura por meio da tecnologia.
-                        Acreditamos no poder do conhecimento aliado
-                        à inovação para criar novas formas de aprendizado.
-                    </p>
-                    <p>
-                        Foi com esse propósito que desenvolvemos
-                        o Memori, um aplicativo que utiliza
-                        Realidade Aumentada (RA) para aproximar
-                        as pessoas da história e do patrimônio
-                        cultural, especialmente os adolescentes.
-                    </p>
-                    <div class="sobre-logo">
+        <section id="funcionalidades" class="section-space">
+            <div class="container">
+
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    O QUE O MEMORI OFERECE
+                </span>
+
+                <div class="section-heading row align-items-end g-3">
+
+                    <div class="col-lg-8">
+                        <h2>
+                            Uma nova maneira de
+                            <br>
+                            <span>descobrir a história.</span>
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>
+                            Três possibilidades que unem o mundo real
+                            ao conhecimento.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="row g-3">
+
+                    <div class="col-md-4">
+                        <article class="feature-card feature-neutral">
+
+                            <span class="feature-number">01 / CULTURA</span>
+                            <span class="feature-symbol" aria-hidden="true">◎</span>
+
+                            <h3>
+                                Exploração
+                                <br>
+                                cultural.
+                            </h3>
+
+                            <p>
+                                Descubra monumentos, lugares e histórias
+                                importantes da região.
+                            </p>
+
+                            <div class="feature-foot">
+                                Patrimônio e memória
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="feature-card feature-green">
+
+                            <span class="feature-number">02 / IMERSÃO</span>
+                            <span class="feature-symbol" aria-hidden="true">▣</span>
+
+                            <h3>
+                                Realidade
+                                <br>
+                                aumentada.
+                            </h3>
+
+                            <p>
+                                Explore conteúdos digitais integrados
+                                ao ambiente real.
+                            </p>
+
+                            <div class="feature-foot">
+                                Experiência interativa
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="feature-card feature-yellow">
+
+                            <span class="feature-number">03 / EDUCAÇÃO</span>
+                            <span class="feature-symbol" aria-hidden="true">✳</span>
+
+                            <h3>
+                                Aprendizado
+                                <br>
+                                interativo.
+                            </h3>
+
+                            <p>
+                                Aprenda sobre a história local de maneira
+                                dinâmica e envolvente.
+                            </p>
+
+                            <div class="feature-foot">
+                                Conhecimento em movimento
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="memori" class="memori-section section-space">
+            <div class="container">
+
+                <span class="eyebrow eyebrow-light">
+                    <span class="dot dot-green"></span>
+                    NOSSO APLICATIVO
+                </span>
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+
+                        <h2>
+                            Conheça o
+                            <span>Memori.</span>
+                        </h2>
+
+                        <span class="beta-badge">VERSÃO BETA</span>
+
+                        <p class="memori-highlight">
+                            O passado ganha vida através da tecnologia.
+                        </p>
+
+                        <p>
+                            Inspirado na palavra latina
+                            <em>memoria</em>,
+                            o nome Memori representa nossa missão de
+                            preservar e reviver a história e a cultura
+                            por meio de experiências imersivas.
+                        </p>
+
+                        <p>
+                            O aplicativo busca valorizar o patrimônio
+                            cultural local e complementar o aprendizado
+                            de estudantes do Ensino Fundamental II,
+                            utilizando recursos de realidade aumentada.
+                        </p>
+
+                        <div class="platforms">
+
+                            <div class="platform">
+                                <img src="imgs/Apple-logo.png" alt="App Store">
+                            </div>
+
+                            <div class="platform">
+                                <img src="imgs/Google-logo.png" alt="Google Play">
+                            </div>
+
+                        </div>
+
+                        <small class="platform-note">
+                            Plataformas previstas. A disponibilidade
+                            para download ainda será confirmada.
+                        </small>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="memori-showcase">
+
+                            <div class="showcase-accent" aria-hidden="true"></div>
+
+                            <img
+                                src="imgs/iphones.png"
+                                alt="Telas de apresentação do aplicativo Memori"
+                                loading="lazy"
+                            >
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nos" class="section-space about-section">
+            <div class="container">
+
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    QUEM SOMOS
+                </span>
+
+                <div class="row g-5 align-items-start">
+
+                    <div class="col-lg-7">
+
+                        <h2>
+                            Ideias que conectam.
+                            <br>
+                            <span>Histórias que permanecem.</span>
+                        </h2>
+
+                        <p class="lead-copy">
+                            Somos a Insight Sync, uma equipe de estudantes
+                            de Desenvolvimento de Software Multiplataforma
+                            da FATEC Registro.
+                        </p>
+
+                        <p>
+                            Acreditamos que a tecnologia pode aproximar
+                            pessoas da cultura e da educação.
+                            Criamos o Memori para tornar a descoberta
+                            do patrimônio histórico local mais acessível,
+                            interessante e interativa.
+                        </p>
+
                         <img
                             src="imgs/insigth-sobre.png"
-                            alt="Insight Sync"
+                            alt="Identidade visual Insight Sync"
+                            class="about-logo"
+                            loading="lazy"
                         >
+
                     </div>
+
+                    <div class="col-lg-5">
+
+                        <article class="about-card">
+
+                            <span class="about-number">01</span>
+
+                            <h3>Nossa missão</h3>
+
+                            <p>
+                                Democratizar o acesso à cultura e à
+                                educação por meio de experiências
+                                imersivas e interativas.
+                            </p>
+
+                        </article>
+
+                        <article class="about-card">
+
+                            <span class="about-number">02</span>
+
+                            <h3>Nosso propósito</h3>
+
+                            <p>
+                                Valorizar a história local, incentivar
+                                o pertencimento e despertar a curiosidade
+                                de novas gerações.
+                            </p>
+
+                        </article>
+
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-            <div class="col-lg-6">
-                <div class="sobre-cards">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            01
+        <section id="equipe" class="section-space team-section">
+            <div class="container">
+
+                <span class="eyebrow">
+                    <span class="dot"></span>
+                    QUEM FAZ ACONTECER
+                </span>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Pessoas que criam.
+                        <br>
+                        <span>Ideias que ganham vida.</span>
+                    </h2>
+
+                    <p>
+                        Conheça as integrantes por trás do Memori.
+                    </p>
+
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="team-card">
+
+                            <div class="team-image">
+                                <img
+                                    src="imgs/fotos_equipe/Ananda.jpeg"
+                                    alt="Ananda Cristine"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="team-details">
+
+                                <h3>Ananda Cristine</h3>
+
+                                <span class="role">
+                                    Back-end / Dados
+                                </span>
+
+                                <p>
+                                    Estudante de Desenvolvimento de
+                                    Software Multiplataforma na
+                                    FATEC Registro.
+                                </p>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="team-card">
+
+                            <div class="team-image">
+                                <img
+                                    src="imgs/fotos_equipe/Samia.jpeg"
+                                    alt="Samia Braz"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="team-details">
+
+                                <h3>Samia Braz</h3>
+
+                                <span class="role">
+                                    Back-end
+                                </span>
+
+                                <p>
+                                    Estudante de Desenvolvimento de
+                                    Software Multiplataforma na
+                                    FATEC Registro.
+                                </p>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="team-card">
+
+                            <div class="team-image">
+                                <img
+                                    src="imgs/fotos_equipe/Caty.png"
+                                    alt="Catarine Pereira"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="team-details">
+
+                                <h3>Catarine Pereira</h3>
+
+                                <span class="role">
+                                    UX / Front-end
+                                </span>
+
+                                <p>
+                                    Estudante de Desenvolvimento de
+                                    Software Multiplataforma na
+                                    FATEC Registro.
+                                </p>
+
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-space faq-section">
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-lg-5">
+
+                        <span class="eyebrow">
+                            <span class="dot"></span>
+                            PERGUNTAS FREQUENTES
+                        </span>
+
+                        <h2>
+                            Quer conhecer
+                            <span>melhor o Memori?</span>
+                        </h2>
+
+                        <p>
+                            Algumas respostas sobre a proposta do projeto.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <div class="accordion accordion-flush" id="faqAccordion">
+
+                            <div class="accordion-item">
+
+                                <h3 class="accordion-header">
+
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1"
+                                        aria-expanded="true"
+                                        aria-controls="faq1"
+                                    >
+                                        O que é o Memori?
+                                    </button>
+
+                                </h3>
+
+                                <div
+                                    id="faq1"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        É um aplicativo educacional que
+                                        utiliza realidade aumentada para
+                                        aproximar estudantes da história
+                                        e do patrimônio cultural local.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-item">
+
+                                <h3 class="accordion-header">
+
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2"
+                                        aria-expanded="false"
+                                        aria-controls="faq2"
+                                    >
+                                        Para quem o Memori foi pensado?
+                                    </button>
+
+                                </h3>
+
+                                <div
+                                    id="faq2"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Principalmente para adolescentes
+                                        e estudantes do Ensino Fundamental II,
+                                        como complemento ao aprendizado
+                                        sobre a história da região.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-item">
+
+                                <h3 class="accordion-header">
+
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3"
+                                        aria-expanded="false"
+                                        aria-controls="faq3"
+                                    >
+                                        Como funciona a realidade aumentada?
+                                    </button>
+
+                                </h3>
+
+                                <div
+                                    id="faq3"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        A proposta é integrar conteúdos
+                                        digitais à visualização do ambiente
+                                        real, criando novas maneiras de
+                                        explorar informações culturais.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="accordion-item">
+
+                                <h3 class="accordion-header">
+
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq4"
+                                        aria-expanded="false"
+                                        aria-controls="faq4"
+                                    >
+                                        O aplicativo já está disponível?
+                                    </button>
+
+                                </h3>
+
+                                <div
+                                    id="faq4"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        O projeto é apresentado como versão
+                                        beta. A disponibilidade pública nas
+                                        lojas ainda precisa ser confirmada
+                                        pela equipe.
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <h4>Nossa Missão</h4>
-                        <p>
-                            Democratizar o acesso à cultura
-                            e à educação por meio de experiências
-                            imersivas, interativas e acessíveis.
-                        </p>
                     </div>
 
-                    <div class="info-card">
-                        <div class="info-icon">
-                            02
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section section-space">
+            <div class="container">
+
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <span class="eyebrow eyebrow-light">
+                            <span class="dot dot-green"></span>
+                            VAMOS CONVERSAR
+                        </span>
+
+                        <h2>
+                            Vamos conectar
+                            <br>
+                            histórias e
+                            <span>ideias?</span>
+                        </h2>
+
+                        <p>
+                            Quer saber mais sobre o Memori?
+                            Envie uma mensagem para a equipe.
+                        </p>
+
+                        <div class="contact-squiggle" aria-hidden="true">
+                            〰 ↗
                         </div>
-                        <h4>Nosso Propósito</h4>
-                        <p>
-                            Valorizar o patrimônio histórico brasileiro,
-                            incentivar o sentimento de pertencimento
-                            e contribuir para a formação de cidadãos
-                            conscientes de sua história.
-                        </p>
+
                     </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="contact-card">
+
+                            <h3>Fale com a Insight Sync</h3>
+
+                            <p>
+                                Preencha os campos abaixo.
+                                O envio será habilitado quando
+                                a equipe configurar um endereço
+                                de contato.
+                            </p>
+
+                            <form id="contactForm">
+
+                                <label for="nome">Seu nome</label>
+
+                                <input
+                                    id="nome"
+                                    name="nome"
+                                    type="text"
+                                    placeholder="Como podemos chamar você?"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                                <label for="email">Seu e-mail</label>
+
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="voce@exemplo.com"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                                <label for="mensagem">Sua mensagem</label>
+
+                                <textarea
+                                    id="mensagem"
+                                    name="mensagem"
+                                    rows="4"
+                                    placeholder="Conte um pouco sobre o que deseja saber"
+                                    required
+                                ></textarea>
+
+                                <button
+                                    class="button button-blue"
+                                    type="button"
+                                    disabled
+                                    aria-describedby="formAviso"
+                                >
+                                    Envio em configuração ↗
+                                </button>
+
+                                <p id="formAviso" class="form-note">
+                                    O formulário ainda não envia mensagens.
+                                    Configure um serviço de envio ou e-mail
+                                    institucional antes de ativá-lo.
+                                </p>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+    </main>
 
-<section id="equipe" class="equipe-section">
-    <div class="container">
-        <div class="section-header text-center">
-            <span class="section-tag">
-                QUEM FAZ ACONTECER
-            </span>
-            <h2>Nossa Equipe</h2>
-            <p>
-                Conheça as pessoas por trás da Insight Sync
-                e do desenvolvimento do Memori.
-            </p>
-        </div>
-        <div class="row g-4 justify-content-center">
+    <footer class="footer">
+        <div class="container">
 
-            <!-- Ananda -->
-            <div class="col-md-6 col-lg-4">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img
-                            src="imgs/fotos_equipe/Ananda.jpeg"
-                            alt="Ananda Cristine"
-                        >
-                    </div>
+            <div class="footer-top">
 
-                    <div class="team-info">
-                        <h3>Ananda Cristine</h3>
-                        <span class="team-role">
-                            Back-end / Dados
-                        </span>
-                        <p>
-                            Estudante de Desenvolvimento
-                            de Software Multiplataforma
-                            na FATEC Registro.
-                        </p>
-                    </div>
+                <div>
+
+                    <img
+                        src="imgs/logo_footer.png"
+                        alt="Insight Sync"
+                        class="footer-logo"
+                    >
+
+                    <p>
+                        Conectando tecnologia, cultura e educação.
+                    </p>
+
                 </div>
-            </div>
 
-            <!-- Samia -->
-            <div class="col-md-6 col-lg-3">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img
-                            src="imgs/fotos_equipe/Samia.jpeg"
-                            alt="Samia Braz"
-                        >
+                <div class="footer-links">
 
-                    </div>
+                    <a href="#inicio">Início</a>
+                    <a href="#memori">Memori</a>
+                    <a href="#sobre-nos">Sobre Nós</a>
+                    <a href="#equipe">Equipe</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contato">Contato</a>
 
-                    <div class="team-info">
-                        <h3>Samia Braz</h3>
-                        <span class="team-role">
-                            Back-end
-                        </span>
-                        <p>
-                            Estudante de Desenvolvimento
-                            de Software Multiplataforma
-                            na FATEC Registro.
-                        </p>
-                    </div>
                 </div>
-            </div>
 
-            <!-- Catarine -->
-            <div class="col-md-6 col-lg-3">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img
-                            src="imgs/fotos_equipe/Caty.jpeg"
-                            alt="Catarine Pereira"
-                        >
-                    </div>
-
-                    <div class="team-info">
-                        <h3>Catarine Pereira</h3>
-                        <span class="team-role">
-                            UX / Front-end
-                        </span>
-                        <p>
-                            Estudante de Desenvolvimento
-                            de Software Multiplataforma
-                            na FATEC Registro.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <img
-                src="imgs/logo_footer.png"
-                alt="Insight Sync"
-                class="footer-logo"
-            >
-            <p>
-                Conectando tecnologia, cultura e educação.
-            </p>
-
-            <div class="footer-links">
-                <a href="#inicio">Início</a>
-                <a href="#sobre-nos">Sobre Nós</a>
-                <a href="#memori">Memori</a>
-                <a href="#equipe">Equipe</a>
             </div>
 
             <div class="footer-bottom">
-                <p>
+
+                <span>
                     © 2026 Insight Sync.
                     Todos os direitos reservados.
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+                </span>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-  </script>
+                <a href="#inicio">Voltar ao topo ↑</a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
